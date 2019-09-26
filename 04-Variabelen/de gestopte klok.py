@@ -19,14 +19,14 @@ y4 = (uur4 * 60) + min4
 yy = y4 - y1
 y0 = y3 - y2
 vertrek = y4 - y1 + (720 - (720* (yy / abs(yy))))
-yy5 = y3 - y2 + (720 - (720* (y0 / abs(y0))))
-y5 = (vertrek - yy5) / 2
+pauze = y3 - y2 + (720 - (720* (y0 / abs(y0))))
+y5 = (vertrek - pauze) / 2
 y6 = y3 + y5
-y7 = y6 // 60
-y8 = y6 % 60
-raar = y7 - 24
-y7 -= 12 + (12 * (raar/abs(raar)))
+uur_eind = y6 // 60
+min_eind = y6 % 60
+speciaal = uur_eind - 24
+uur_eind -= 12 + (12 * (speciaal/abs(speciaal)))
 
 #uitvoer
-print(int(y7))
-print(int(y8))
+print(int(uur_eind))
+print(int(min_eind))
