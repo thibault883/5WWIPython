@@ -27,6 +27,6 @@ min_eind = y6 % 60
 speciaal = uur_eind - 24
 uur_eind -= 12 + (12 * (speciaal/abs(speciaal)))
 
-#uitvoer
+#uitvoer uur
 print(int(uur_eind))
 print(int(min_eind))
