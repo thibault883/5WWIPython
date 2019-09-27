@@ -1,7 +1,7 @@
 #invoer
 sec = int(input("geef aantal seconden: "))
 
-#bereking
+#berekening
 dagen = sec // 86400
 sec %= 86400
 
