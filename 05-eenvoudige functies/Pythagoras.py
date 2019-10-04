@@ -9,9 +9,8 @@ a = float(input('lengte zijde a: '))
 b = float(input('lengte zijde b: '))
 
 #berekening
-c = round(sqrt(pow(a, 2) + pow(b, 2)), 2)
-a = round(a, 2)
-b = round(b, 2)
+c = sqrt(pow(a, 2) + pow(b, 2))
+
 #uitvoer
-uitvoer = 'In een rechthoekige driehoek met rechthoekszijden a = {} en b = {} is de schuine zijde {}'
+uitvoer = 'In een rechthoekige driehoek met rechthoekszijden a = {:.2f} en b = {:.2f} is de schuine zijde {:.2f}'
 print(uitvoer.format(a, b, c))
