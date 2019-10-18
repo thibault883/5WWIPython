@@ -1,8 +1,3 @@
-#18 + 20     = 38
-#   180 + 200    = 380
-# 1800 + 2000   = 3800
-#18000 + 20000  = 38000
-#180000 + 200000 = 380000
 #invoer
 a = int(input('geef een cijfer tussen 0 en 20: '))
 b = int(input('geef een cijfer tussen 0 en 20: '))
@@ -12,7 +7,7 @@ uitkomst = int(a + b)
 
 
 #uitvoer
-uitvoer = '{:6d} + {:<6d} = {:d}'
+uitvoer = '{:>6d} + {:<6d} = {:<d}'
 print(uitvoer.format(a, b, uitkomst))
 print(uitvoer.format(a * 10, b * 10, uitkomst * 10))
 print(uitvoer.format(a * pow(10, 2), b * pow(10, 2), uitkomst * pow(10, 2)))
