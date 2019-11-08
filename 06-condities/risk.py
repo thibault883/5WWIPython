@@ -42,3 +42,11 @@ else:
     leg_2 = 'legers'
 
 print('aanvaller verliest', verlies_aanv , leg_1 +', verdediger verliest', verlies_verd, leg_2)
+
+#middelste van 3 getallen
+#max(min(a1, a2), min(a2, a3), min (a1, a3))
+
+#middelste van 4 getallen
+#mid_1 = max(min(x1, x2), min(x1, x3), min(x3, x2))
+#mid_2 = x1 + x2 + x3 + x4 - max - min - mid_1
+#print(max, max(mid_1,mid_2), min(mid_1,mid_2), min)

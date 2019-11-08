@@ -23,3 +23,5 @@ else:
 
 #uitvoer
 print(uitvoer)
+
+#kan worden vereenvoudigd als else iets anders is
