@@ -1,27 +1,17 @@
-#invoer
-ant_1 = str(input('geef jouw antwoord: '))
-ant_2 = str(input('geef jouw antwoord: '))
+ant_1 = input('geef antwoord: ')
+ant_2 = input('geef antwoord: ')
 
-#berekening
 if ant_1 == ant_2:
     uitvoer = 'onbeslist'
-elif ant_1 == 'blad':
-    if ant_2 == 'steen':
-        uitvoer = 'speler 1 wint'
-    else:
-        uitvoer = 'speler 2 wint'
-elif ant_1 == 'steen':
-    if ant_2 == 'schaar':
-        uitvoer = 'speler 1 wint'
-    else:
-        uitvoer = 'speler 2 wint'
+elif ant_1 == 'blad' and ant_2 == 'steen':
+    uitvoer = 'speler 1 wint'
+elif ant_1 == 'steen' and ant_2 == 'schaar':
+    uitvoer = 'speler 1 wint'
+elif ant_1 == 'schaar' and ant_2 == 'blad':
+    uitvoer = 'speler 1 wint'
 else:
-    if ant_2 == 'blad':
-        uitvoer = 'speler 1 wint'
-    else:
-        uitvoer = 'speler 2 wint'
-
-#uitvoer
+    uitvoer = 'speler 2 wint'
 print(uitvoer)
+
 
 #kan worden vereenvoudigd als else iets anders is
