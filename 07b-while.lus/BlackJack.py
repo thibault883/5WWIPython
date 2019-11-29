@@ -1,10 +1,8 @@
 kaart = int(input('geef de kaart: '))
 som = kaart
-while kaart != 0:
+while kaart != 0 and som < 21:
     kaart = int(input('geef de kaart: '))
     som += kaart
-    if som >= 21:
-        break
 
 if som == 21:
     print('Gewonnen!')
