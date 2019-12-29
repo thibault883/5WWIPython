@@ -5,5 +5,5 @@ while dikte < afstand:
     dikte *= 2
     vouwen += 1
 
-print('Na', vouwen ,'keer vouwen bedraagt de dikte van het papier', 549755813888,'mm.')
+print('Na', vouwen, 'keer vouwen bedraagt de dikte van het papier', dikte, 'mm.')
 
