@@ -1,8 +1,9 @@
-tijd = int(input('geef de tijd: '))
-som = 0
-for i in range(tijd):
-    if i % 2 == 0:
-        som += i + 2
-    else:
-        som -= (i + 1) / 2
-print(round(som))
+aantal_keer = int(input('geef het aantal: '))
+som, som_vorig = 1, 0
+
+for i in range(aantal_keer - 1):
+    vorig = som_vorig
+    som_vorig = som
+    som = vorig + som_vorig
+
+print(som)
