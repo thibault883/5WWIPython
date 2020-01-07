@@ -1,10 +1,8 @@
-from random import randint
-
-munt = 0
-aantal_experimenten = 100
-
-for i in range(aantal_experimenten):
-    munt += randint(0,1)
-
-print('munt:', munt / aantal_experimenten * 100 ,'kop:', (aantal_experimenten - munt) / aantal_experimenten * 100)
-
+tijd = int(input('geef de tijd: '))
+som = 0
+for i in range(tijd):
+    if i % 2 == 0:
+        som += i + 2
+    else:
+        som -= (i + 1) / 2
+print(round(som))
