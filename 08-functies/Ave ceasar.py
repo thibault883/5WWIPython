@@ -9,7 +9,7 @@ def roteer_letter(t, aantal):
                 letter -= 26
         elif ord('A') <= ord(t) <= ord('Z'):
             if not ord('A') <= letter <= ord('Z'):
-                letter -=  26
+                letter -= 26
     else:
         letter = ord(t)
 
@@ -21,5 +21,3 @@ def versleutel(zin, aantal):
         uitkomst += roteer_letter(t, aantal)
 
     return uitkomst
-
-
