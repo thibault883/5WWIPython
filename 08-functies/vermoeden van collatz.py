@@ -14,4 +14,3 @@ def collatz(n):
 
     return stap
 
-p
