@@ -11,4 +11,3 @@ def germaniseer(zin):
 
     return nieuwe_zin
 
-print(germaniseer('Dit is een test'))
