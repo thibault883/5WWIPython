@@ -11,4 +11,4 @@ def hint(geraden, woord):
 
     return hint
 
-print(hint('amorf', 'kiste'))
+
