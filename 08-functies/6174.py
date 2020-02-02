@@ -45,9 +45,11 @@ def kaprekar(getal):
 
 
 def leuk(getal):
+    uitvoer = ''
     while getal != 5:
-        return getal
+        uitvoer += str(getal) + "\n"
         getal += 1
+    return uitvoer
 
 
 print(leuk(2))
