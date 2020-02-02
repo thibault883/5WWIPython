@@ -16,14 +16,15 @@ def splits(getal):
 def oplopende_cijfers(getal_1, getal_2, getal_3, getal_4):
     hoogste = max(getal_1, getal_2, getal_3, getal_4)
     laagste = min(getal_1, getal_2, getal_3, getal_4)
-    mid_1 = max(min(getal_1, getal_2), min(getal_1, getal_3), min(getal_3, getal_2))
-    mid_2 = getal_3 + getal_2 + getal_1 + getal_4 - hoogste - laagste - mid_1
+    mid_1 = int(max(min(getal_1, getal_2), min(getal_1, getal_3), min(getal_3, getal_2)))
+    mid_2 = int(getal_3) + int(getal_2) + int(getal_1) + int(getal_4) - int(hoogste) - int(laagste) - int(mid_1)
+    mid_laag = min(mid_1, mid_2)
+    mid_hoog = max(mid_1, mid_2)
+    return laagste, mid_laag, mid_hoog, hoogste
 
-    return laagste, min(mid_1, mid_2), max(mid_1, mid_2), hoogste
-
-def op_af_getallen(laagste, mid_1, mid_2, hoogste):
-    cijfer_1 = str(laagste) + str(mid_1) + str(mid_2) + str(hoogste)
-    cijfer_2 = str(hoogste) + str(mid_2) + str(mid_1) + str(laagste)
+def op_af_getallen(laagste, mid_laag, mid_hoog, hoogste):
+    cijfer_1 = str(laagste) + str(mid_laag) + str(mid_hoog) + str(hoogste)
+    cijfer_2 = str(hoogste) + str(mid_hoog) + str(mid_laag) + str(laagste)
 
     return cijfer_1, cijfer_2
 
@@ -33,15 +34,20 @@ def verschil(cijfer_1, cijfer_2):
     return verschil
 
 def kaprekar(getal):
-    while uitvoer != int(6174):
-        uitvoer = verschil(oplopende_cijfers(splits(getal)))
-        return (str(max(oplopende_cijfers(splits(getal)))) + ' - ' + (str(min(oplopende_cijfers(splits(getal)))) + ' = ' + str(uitvoer)
-        getal = 0
-        getal += uitvoer
-
-print(kaprekar(5342))
-
-
+    while uitvoer != 6174:
+        getal_1, getal_2, getal_3, getal_4 = splits(getal)
+        laagste, mid_laag, mid_hoog, hoogste = oplopende_cijfers(getal_1, getal_2, getal_3, getal_4)
+        cijfer_1, cijfer_2 = op_af_getallen(laagste, mid_laag, mid_hoog, hoogste)
+        uitvoer = verschil(cijfer_2, cijfer_1)
+        return uitvoer
+        getal = uitvoer
 
 
 
+def leuk(getal):
+    while getal != 5:
+        return getal
+        getal += 1
+
+
+print(leuk(2))
