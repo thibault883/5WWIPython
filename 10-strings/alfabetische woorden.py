@@ -9,13 +9,15 @@ def positie_laagste_ascii(woord):
     return stap
 
 
-def sorteer(woord):
-    sorteer = woord
+def sorteer(sorteer):
     uitkomst = ''
-    for i in range(len(woord)):
+    for i in range(len(sorteer)):
         uitkomst += sorteer[(positie_laagste_ascii(sorteer))]
         sorteer = sorteer[:positie_laagste_ascii(sorteer)] + sorteer[positie_laagste_ascii(sorteer) + 1:]
 
     return uitkomst
+
+def is_alfabetisch(woord):
+    return (woord == sorteer(woord))
 
 
