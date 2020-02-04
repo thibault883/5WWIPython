@@ -10,9 +10,9 @@ from random import randint
 #    print(gooi_muntstuk())
 #print(rg, muntstuk)
 
-zin = input('geef een zin: ')
-uitkomst = ''
-for t in zin:
-    uitkomst = uitkomst + t
-print(uitkomst)
+#zin = input('geef een zin: ')
+#uitkomst = ''
+#for t in zin:
+    #uitkomst = uitkomst + t
+#print(uitkomst)
 
