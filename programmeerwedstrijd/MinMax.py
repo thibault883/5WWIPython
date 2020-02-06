@@ -9,5 +9,5 @@ for i in range(lijsten):
         laagste = min(cijfer, laagste)
     uitkomst += '{} {} {}\n'.format(i + 1, laagste, hoogste)
 
-print(uitkomst[:-1])
+print(uitkomst.strip())
 
