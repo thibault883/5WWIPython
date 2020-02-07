@@ -44,6 +44,4 @@ def kaprekar(getal):
 
     return uitkomst.strip()
 
-
-
-
+print(splits(1234))
