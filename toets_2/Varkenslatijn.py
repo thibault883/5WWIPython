@@ -9,9 +9,9 @@ def verwijder_medeklinkers(woord):
 
 def varkenslatijn(woord):
     if woord[0] in 'aeoiu':
-        woord = woord + 'ibus'
+        woord += 'ibus'
     elif woord[-1] in 'aiu':
-        woord = woord + 'nt'
+        woord += 'nt'
     else:
         woord = verwijder_medeklinkers(woord) + 'itum'
 
