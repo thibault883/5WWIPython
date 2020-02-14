@@ -9,3 +9,4 @@ def vlag(soort, kleur):
     return uitvoer[:-3]
 
 print(vlag('verticaal',('zwart', 'geel', 'rood')))
+
