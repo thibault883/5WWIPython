@@ -6,4 +6,4 @@ def dubbels(lijst):
 
     return uitvoer
 
-print(dubbels([(0, 1), 'joris', 4, 'korneel', (1, -1), 1, 1, 'piet', 4, 'joris']))
+
