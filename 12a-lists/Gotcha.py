@@ -1,22 +1,15 @@
 def ik_heb_gemoord(lijst, moordenaar):
-    slachtoffer = lijst.index(moordenaar) + 1
-    slachtoffer_2 = slachtoffer + 1
-    while slachtoffer >= len(lijst):
-        slachtoffer -= len(lijst)
-    while slachtoffer_2 >= len(lijst):
-        slachtoffer_2 -= len(lijst)
     if len(lijst) != 1:
-        lijst.remove(lijst[slachtoffer])
+        lijst.remove(lijst[(lijst.index(moordenaar) + 1) % len(lijst)])
 
-    return lijst[slachtoffer_2], lijst
+    return lijst[(lijst.index(moordenaar) + 1) % len(lijst)], lijst
 
 def ik_ben_vermoord(lijst, slachtoffer):
-    volgend = lijst.index(slachtoffer) + 1
-    while volgend >= len(lijst):
-        volgend -= len(lijst)
+    index = lijst.index(slachtoffer)
     if len(lijst) != 1:
         lijst.remove(slachtoffer)
+    volgend = index % len(lijst)
 
     return lijst[volgend], lijst
 
-print(ik_heb_gemoord(['jan', 'piet', 'joris', 'korneel'],'piet'))
+print(ik_ben_vermoord(['jan', 'piet', 'korneel'],'piet'))

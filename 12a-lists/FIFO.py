@@ -12,3 +12,4 @@ while invoer != 'STOP':
 
 print(uitvoer.strip())
 
+
