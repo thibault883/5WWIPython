@@ -15,14 +15,16 @@ def splits_kaartspel(lijst):
 
 def faro_shuffle(kaarten_1, kaarten_2):
     uitvoer = []
-    if len(kaarten_1) == len(kaarten_2):
-        for i in range(len(kaarten_1)):
-            uitvoer.append(kaarten_1[i])
-            uitvoer.append(kaarten_2[i])
+    for i in range(len(kaarten_1)):
+        uitvoer.append(kaarten_1[i])
+        uitvoer.append(kaarten_2[i])
+
+    if len(kaarten_1) != len(kaarten_2):
+        uitvoer.append(kaarten_2[-1])
 
     return uitvoer
 
-print(faro_shuffle(['dood 0', 'dood 1', 'liefde 0'],['liefde 1', 'tijd 0', 'tijd 1']))
+
 
 
 
