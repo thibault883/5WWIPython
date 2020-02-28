@@ -7,3 +7,5 @@ def is_palindroom(woord):
     return uitkomst
 
 print(is_palindroom('tarwerat'))
+
+
