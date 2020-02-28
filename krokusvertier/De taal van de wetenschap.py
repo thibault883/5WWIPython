@@ -14,8 +14,8 @@ while k < (len(woord_2) + 1) and k < (len(woord_1) + 1):
 suffix = suffix[::-1]
 
 if len(suffix) != 0:
-    stam_1 = woord_1[len(prefix):woord_1.index(suffix)]
-    stam_2 = woord_2[len(prefix):woord_2.index(suffix)]
+    stam_1 = woord_1[len(prefix):-len(suffix)]
+    stam_2 = woord_2[len(prefix):-len(suffix)]
 else:
     stam_1 = woord_1[len(prefix):]
     stam_2 = woord_2[len(prefix):]
