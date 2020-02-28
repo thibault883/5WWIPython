@@ -28,5 +28,3 @@ else:
 print('{}┏{:^{}}┓'.format(' ' * len(prefix), stam_1, aantal))
 print('{}┫{}┣{}'.format(prefix, ' ' * aantal, suffix))
 print('{}┗{:^{}}┛'.format(' ' * len(prefix), stam_2, aantal))
-
-
