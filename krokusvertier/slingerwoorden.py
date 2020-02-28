@@ -8,3 +8,11 @@ def graad(woord):
     return aantal
 
 def slinger(woord, keer):
+    if graad(woord) != 0 and keer != 0:
+        uitvoer = (woord[:-graad(woord)] * keer) + woord[:graad(woord)]
+    else:
+        uitvoer = woord * keer
+
+    return uitvoer
+
+
