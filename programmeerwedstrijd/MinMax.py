@@ -1,13 +1,14 @@
-lijsten = int(input('hoeveel keer: '))
-uitkomst = ''
-for i in range(lijsten):
-    hoogste, laagste= 0, 1000
-    aantal = int(input('hoeveel in lijst: '))
-    for k in range(aantal):
-        cijfer = int(input('geef een cijfer: '))
-        hoogste = max(cijfer, hoogste)
-        laagste = min(cijfer, laagste)
-    uitkomst += '{} {} {}\n'.format(i + 1, laagste, hoogste)
+import system
+file_i = open('invoer.txt')
+file_0 = open('uitvoer.txt', 'w')
 
-print(uitkomst.strip())
+
+aantal_gevallen = int(input('aantal lijsten: '))
+for i in range(1, aantal_gevallen + 1):
+    lengte_lijst = int(input('lijst: '))
+    lijst = []
+    for _ in range(lengte_lijst):
+        lijst.append(int(input('getal: ')))
+    print(i, min(lijst), max(lijst))
+
 
