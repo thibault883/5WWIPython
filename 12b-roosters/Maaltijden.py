@@ -1,13 +1,12 @@
 def dagprijs(lijst):
-    som, k = 0, 1
-    for i in range(len(lijst) // 2):
-        if lijst[k - 1] == 'middagmaal':
-            som += (5.3 * lijst[k])
-        elif lijst[k - 1] == 'soep':
-            som += (1.7 * lijst[k])
+    som = 0
+    for i in range(0, len(lijst), 2):
+        if lijst[i] == 'middagmaal':
+            som += (5.3 * lijst[i + 1])
+        elif lijst[i] == 'soep':
+            som += (1.7 * lijst[i + 1])
         else:
-            som += (2.3 * lijst[k])
-        k += 2
+            som += (2.3 * lijst[i + 1])
 
     return som
 
